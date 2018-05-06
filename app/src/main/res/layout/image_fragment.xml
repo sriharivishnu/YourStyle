@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="442dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <ImageButton
+        android:id="@+id/yesButton"
+        android:layout_width="100dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/noButton"
+        app:layout_constraintEnd_toStartOf="@+id/noButton"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/noButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/pos_thumb" />
+
+    <ImageButton
+        android:id="@+id/noButton"
+        android:layout_width="106dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        app:srcCompat="@drawable/neg_thumb" />
+
+    <TextView
+        android:id="@+id/yesPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/yesButton"
+        app:layout_constraintEnd_toEndOf="@+id/yesButton"
+        app:layout_constraintStart_toStartOf="@+id/yesButton"
+        app:layout_constraintTop_toTopOf="@+id/yesButton"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <TextView
+        android:id="@+id/noPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="25dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/noButton"
+        app:layout_constraintEnd_toEndOf="@+id/noButton"
+        app:layout_constraintStart_toStartOf="@+id/noButton"
+        app:layout_constraintTop_toTopOf="@+id/noButton" />
+
+
+</android.support.constraint.ConstraintLayout>
